@@ -1,10 +1,5 @@
 import { Kafka, Producer } from "kafkajs";
-
-interface SendMessage {
-  topic: string;
-  message: string;
-  to: string;
-}
+import { SendMessage } from "../index.js";
 
 class KafkaService {
   private static instance: KafkaService;
