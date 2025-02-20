@@ -1,0 +1,28 @@
+{
+  "name": "emailconsumer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/index.js",
+    "build": "tsc",
+    "server": "wait-on dist && nodemon ./dist/index.js",
+    "watch": "tsc -w",
+    "dev": "concurrently \"npm run watch\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "kafkajs": "^2.2.4",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3",
+    "wait-on": "^8.0.2"
+  }
+}
