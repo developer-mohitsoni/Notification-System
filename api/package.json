@@ -12,7 +12,7 @@
     
     
     "startKafka": "node ./dist/kafka/startKafka.js",
-    "seed": "node ./dist/db/seed.js",
+    "seed": "node ./dist/db/seed.js"
   },
   "keywords": [],
   "author": "Mohit Soni <ms7085422@gmail.com>",
