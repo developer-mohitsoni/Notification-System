@@ -39,6 +39,4 @@ class EmailEngine {
   }
 }
 
-const emailEngine = EmailEngine.getInstance();
-
-export { emailEngine };
+export default EmailEngine;
