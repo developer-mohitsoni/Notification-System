@@ -8,9 +8,11 @@
     "build": "tsc",
     "server": "wait-on dist && nodemon ./dist/server.js",
     "watch": "tsc -w",
-    "seed": "node ./dist/db/seed.js",
     "dev": "concurrently \"npm run watch\" \"npm run server\"",
-    "startKafka": "node ./dist/kafka/startKafka.js"
+    
+    
+    "startKafka": "node ./dist/kafka/startKafka.js",
+    "seed": "node ./dist/db/seed.js",
   },
   "keywords": [],
   "author": "Mohit Soni <ms7085422@gmail.com>",
