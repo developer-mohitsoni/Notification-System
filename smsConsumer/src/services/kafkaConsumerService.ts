@@ -20,7 +20,7 @@ class KafkaConsumerService {
     callback: (message: any) => void
   ): Promise<void> {
     await this.consumer.connect();
-    await this.consumer.subscribe({ topic, fromBeginning: false });
+    await this.consumer.subscribe({ topic, fromBeginning: true });
 
     await this.consumer.run({
       eachMessage: async ({ topic, partition, message }) => {
