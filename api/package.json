@@ -1,14 +1,15 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "node ./dist/server.js",
     "build": "tsc",
-    "server": "wait-on dist/server.js && nodemon ./dist/server.js",
+    "server": "wait-on dist && nodemon ./dist/server.js",
     "watch": "tsc -w",
-    "dev": "concurrently \"npm run watch\" \"npm run server\" \"npm run watch-views\"",
+    "seed": "node ./dist/db/seed.js",
+    "dev": "concurrently \"npm run watch\" \"npm run server\"",
     "startKafka": "node ./dist/kafka/startKafka.js"
   },
   "keywords": [],
