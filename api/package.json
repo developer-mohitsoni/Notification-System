@@ -13,7 +13,7 @@
     "startKafka": "node ./dist/kafka/startKafka.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mohit Soni <ms7085422@gmail.com>",
   "license": "ISC",
   "description": "",
   "dependencies": {
