@@ -1,5 +1,4 @@
 import { Kafka, Producer } from "kafkajs";
-import "dotenv.config";
 
 interface SendMessage {
   topic: string;
